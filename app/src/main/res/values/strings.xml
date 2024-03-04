@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Piperano</string>
+    <string name="welcome_txt">Welcome to Piperano! the best place to order pizza</string>
+    <string name="send_name_btn">Send</string>
+    <string name="quantityString">Enter the amount of pizza</string>
+    <string name="hint">Enter your name like: david</string>
+    <string name="invalidinput">Invalid input!</string>
+    <string name="what_would_you_like">would you prefer to choose a pre made pizza or create your own?</string>
+    <string name="ok">OKAY</string>
+    <string name="cancel">CANCEL</string>
+    <string name="canceled">canceled</string>
+    <string name="goodafternoon">Good Afternoon</string>
+    <string name="goodevening">Good Evening</string>
+    <string name="goodnight">Good Night</string>
+    <string name="goodmorning">" Good Morning"</string>
+    <string name="pizza_size_name_regular">Regular Size</string>
+    <string name="pizza_size_name_family">Family Size</string>
+    <string name="pizza_size_name_private">Private Size</string>
+    <string name="hint_for_sizes_of_pizza">Please choose the size of the pizza you want</string>
+    <string name="hint_for_type_of_crust">Please choose the type of crust you want:</string>
+    <string name="hint_for_type_of_cheese">Please choose the type of cheese you want:</string>
+    <string name="pizza_crust_name_normal">Normal Crust</string>
+    <string name="pizza_crust_name_full_weat">Full Weat Crust</string>
+    <string name="pizza_crust_name_spicy">Spicy Crust</string>
+    <string name="pizza_cheese_name_regular">Regular Cheese</string>
+    <string name="pizza_cheese_name_cheder">Cheder Cheese</string>
+    <string name="pizza_cheese_name_blue">Blue Cheese</string>
+    <string name="tomato_extra">Tomato</string>
+    <string name="pickle_extra">Pickle</string>
+    <string name="b_olives_extra">Black Olives</string>
+    <string name="g_olives_extra">Green Olives</string>
+    <string name="do_you_want_to_add_some_extra">Do you want to add some Extra</string>
+    <string name="too_much_Extra_On_Pizza_hint">you cant add a lot of Extra</string>
+    <string name="total_amount">Amount: 0</string>
+    <string name="finish_button">Finish order</string>
+    <string name="moveToOrderHint">Order Details</string>
+    <string name="add_to_cart_txt" translatable="false"><b>+</b></string>
+    <string name="increase_amount" translatable="false"><b>+</b></string>
+    <string name="decrease_amount" translatable="false"><b>-</b></string>
+    <string name="continue_shopping">Add another item</string>
+    <string name="finish">Finish order</string>
+    <string name="update_changes">update changes</string>
+    <string name="alertMessageHint">Thank you for your order ! see you next time</string>
+    <string name="RestartAppHint">finish</string>
+    <string name="Error_no_pizza_in_order_hint">Please choose at least one of the pizzas</string>
+    <string name="self_made">Build your own</string>
+    <string name="pre_built">Choose a constructed pizza </string>
+    <string name="extras_txt">choose how many extras you want:</string>
+    <string name="loading_txt">Loading...</string>
+    <string name="language_has_changed">Language has changed</string>
+    <string name="hello">Hello</string>
+    <string name="no_one_extra_was_Chosen">you have to choose at least 1 extra to display the extras</string>
+    <string name="no_pizza_combo_was_Chosen">you have to choose the pizza, pizza crust, and cheese</string>
+    <string name="family_size">Family size</string>
+    <string name="regular_size">Regular size</string>
+    <string name="small_size">Normal size</string>
+    <string name="regular_crust">Regular crust</string>
+    <string name="full_weat_crust">Full weat crust</string>
+    <string name="spicey_crust">Spicey crust</string>
+    <string name="regular_cheese">Regular cheese</string>
+    <string name="cheder_cheese">Cheder cheese</string>
+    <string name="blue_cheese">Blue cheese</string>
+    <string name="special_pizza">Built pizza</string>
+    <string name="peperoni_de_papa">peperoni de papa ะ㋚ะ ะ㋚ะ ะ㋚ะ</string>
+    <string name="shimpy_the_shrimpty">shimpy the shrimpty ะ㋚ะ</string>
+    <string name="super_spicy">super spicy ะ㋚ะ ะ㋚ะ</string>
+    <string name="the_pineapple">the pineapple</string>
+    <string name="colorful_pepper">colorful pepper</string>
+    <string name="tomato_with_ato">tomato with ato</string>
+    <string name="peperoni_de_papa_description">Pizza cheder chease, peperomi, tometo, garlic and rosmarin</string>
+    <string name="shimpy_the_shrimpty_description">Pizza with black olive, shrimp, and bulgarit</string>
+    <string name="super_spicy_description">Pizza with black olives and extra hot pepper</string>
+    <string name="the_pineapple_description">Pizza with pineapple, ham and black olives</string>
+    <string name="colorful_pepper_description">Pizza with a lot of pepper in a vase array of color</string>
+    <string name="tomato_with_ato_description">Pizza with tomato feta cheese and onion</string>
+    <string name="invalid_phone_number">Please enter a phone number of 10 digits</string>
+    <string name="invalid_address">No address was inserted or you inserted capital or numbers by mistake</string>
+    <string name="thank_you">Thank you</string>
+    <string name="for_purchasing">! :) for purchasing from us</string>
+    <string name="we_will_contact">We will contact this number:</string>
+    <string name="order_is_done">as soon as the order is ready</string>
+    <string name="total_price">The total price is:</string>
+    <string name="delivery">our delivery guy will contact this nmuber:</string>
+    <string name="delivery_guy_near_the_Adress"> As soon as the dlivery guy is near the address:</string>
+
+
+
+</resources>

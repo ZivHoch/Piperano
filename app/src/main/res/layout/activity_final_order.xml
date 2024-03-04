@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FinalOrderActivity"
+    android:background="@drawable/background_image"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+
+            <ListView
+                android:id="@+id/final_pizza_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Pick up"
+            android:textOn="Delivery"
+            android:thumb="@drawable/thumb_switch_design"
+            app:showText="true"
+            app:track="@drawable/track_switch_design" />
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="number"
+            android:hint="0503331234"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_design"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/AdressForDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="sokolov 17 street"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/edit_text_design"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/total_price_for_all_pizzas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount" />
+
+        <Button
+            android:id="@+id/update_changes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickUpdatePrice"
+            android:background="@drawable/background_design"
+            android:text="@string/update_changes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/finish_order_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickFinish"
+            android:background="@drawable/finish_order_button"
+            android:layout_margin="10dp"
+            android:text="@string/finish_button" />
+
+        <Button
+            android:id="@+id/add_more_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickAddMoreItem"
+            android:background="@drawable/add_another_item_button_design"
+            android:text="@string/continue_shopping" />
+
+    </LinearLayout>
+</LinearLayout>

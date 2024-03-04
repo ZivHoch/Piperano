@@ -1,0 +1,47 @@
+{
+  "Pizza": [
+    {
+      "Name": "peperoni de papa ะ㋚ะ ะ㋚ะ ะ㋚ะ",
+      "Image": "pre_pizza1",
+      "Price": "110",
+      "PizzaAmount": 1,
+      "Description": "Pizza cheder chease, peperomi, tometo, garlic and rosmarin"
+    },
+    {
+      "Name": "shimpy the shrimpty ะ㋚ะ",
+      "Image": "pre_pizza2",
+      "Price": "104",
+      "PizzaAmount": 1,
+      "Description": "Pizza with black olive, shrimp, and bulgarit"
+    },
+    {
+      "Name": "super spicy ะ㋚ะ ะ㋚ะ",
+      "Image": "pre_pizza3",
+      "Price": "80",
+      "PizzaAmount": 1,
+      "Description": "Pizza with black olives and extra hot pepper"
+    },
+    {
+      "Name": "the pineapple",
+      "Image": "pre_pizza4",
+      "Price": "90",
+      "PizzaAmount": 1,
+      "Description": "Pizza with pineapple, ham and black olives"
+    },
+    {
+      "Name": "colorful pepper",
+      "Image": "pre_pizza5",
+      "Price": "75",
+      "PizzaAmount": 1,
+      "Description": "Pizza with a lot of pepper in a vase array of color"
+    },
+    {
+      "Name": "tomato with ato",
+      "Image": "pre_pizza6",
+      "Price": "89",
+      "PizzaAmount": 1,
+      "Description": "Pizza with tomato bulgarit and onion"
+    }
+
+  ]
+}

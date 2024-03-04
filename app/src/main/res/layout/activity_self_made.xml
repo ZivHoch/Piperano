@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    tools:context=".SelfMadeActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/hint_for_sizes_of_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_design"
+        android:fontFamily="@font/noot"
+        android:textColor="@color/black"
+        android:text="@string/hint_for_sizes_of_pizza"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <TextView
+        android:id="@+id/pizza_size_name_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/noot"
+        android:textColor="@color/black"
+        android:text="@string/pizza_size_name_family"/>
+
+
+    <TextView
+        android:id="@+id/pizza_size_name_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noot"
+        android:text="@string/pizza_size_name_regular" />
+
+
+    <TextView
+        android:id="@+id/pizza_size_name_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noot"
+        android:text="@string/pizza_size_name_private"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_margin="5dp"
+        >
+        <RadioGroup
+            android:id="@+id/pizza_size_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/family_size_pizza"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:button="@drawable/family_size_pizza_image_icon"
+                android:onClick="onClickFamilySizeChosen"
+                android:background="@drawable/radio_button_was_selected_background" />
+
+            <RadioButton
+                android:id="@+id/regular_size_pizza"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:button="@drawable/regular_size_pizza_image_icon"
+                android:onClick="onClickRegularSizeChosen"
+                android:background="@drawable/radio_button_was_selected_background"/>
+
+
+            <RadioButton
+                android:id="@+id/small_size_pizza"
+                android:layout_width="100dp"
+                android:layout_height="95dp"
+                android:button="@drawable/small_size_pizza_image_icon"
+                android:onClick="onClickSmallSizeChosen"
+                android:background="@drawable/radio_button_was_selected_background" />
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint_for_type_of_crust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_for_type_of_crust"
+        android:fontFamily="@font/noot"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/background_design"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/pizza_crust_name_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:fontFamily="@font/noot"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:text="@string/pizza_crust_name_normal" />
+
+
+        <TextView
+            android:id="@+id/pizza_crust_name_full_weat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/noot"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/pizza_crust_name_full_weat"/>
+
+        <TextView
+            android:id="@+id/pizza_crust_name_spicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.9"
+            android:fontFamily="@font/noot"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/pizza_crust_name_spicy"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/pizza_crust_type_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pizza_crust_normal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:button="@drawable/pizza_crust1"
+                android:onClick="onClickNormalCrustWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+
+            <RadioButton
+                android:id="@+id/pizza_crust_full_weat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:button="@drawable/pizza_crust2"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:onClick="onClickFullWeatlCrustWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+
+            <RadioButton
+                android:id="@+id/pizza_crust_spicy"
+                android:layout_width="90dp"
+                android:layout_height="95dp"
+                android:button="@drawable/pizza_crust3"
+                android:onClick="onClickSpicyCrustWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint_for_type_of_cheese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noot"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_design"
+        android:textColor="@color/black"
+        android:text="@string/hint_for_type_of_cheese"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/pizza_cheese_name_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/noot"
+            android:paddingLeft="40dp"
+            android:textColor="@color/black"
+            android:text="@string/pizza_cheese_name_regular" />
+
+
+        <TextView
+            android:id="@+id/pizza_cheese_name_cheder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noot"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/pizza_cheese_name_cheder"/>
+
+        <TextView
+            android:id="@+id/pizza_cheese_name_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.1"
+            android:fontFamily="@font/noot"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/pizza_cheese_name_blue"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/pizza_cheese_type_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pizza_cheese_regular"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:button="@drawable/cheese_type1"
+                android:onClick="onClickRegularCheeseWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+
+            <RadioButton
+                android:id="@+id/pizza_cheese_cheder"
+                android:layout_width="100dp"
+                android:layout_height="95dp"
+                android:button="@drawable/cheese_type2"
+                android:onClick="onClickChederCheeseWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+
+            <RadioButton
+                android:id="@+id/pizza_cheese_blue"
+                android:layout_width="100dp"
+                android:layout_height="95dp"
+                android:button="@drawable/cheese_type3"
+                android:onClick="onClickBlueCheeseWasChosen"
+                android:background="@drawable/radio_button_was_selected_background"
+                />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/background_design"
+            android:text="@string/extras_txt"/>
+
+        <EditText
+            android:id="@+id/numOfExtraOnPizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@android:string/ok"
+            android:textSize="20sp"
+            android:fontFamily="@font/noot"
+            android:textColor="@color/black"
+            android:background="@drawable/background_design" />
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:id="@+id/spinnerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="@string/total_amount"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish_button"
+            android:fontFamily="@font/noot"
+            android:textColor="@color/black"
+            android:background="@drawable/background_design"
+            android:onClick="onClickFinishOrder"/>
+        
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
+
